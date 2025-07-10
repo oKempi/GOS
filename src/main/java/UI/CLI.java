@@ -1,4 +1,7 @@
-package Core;
+package UI;
+
+import Core.Gameloop;
+import Core.World;
 
 import java.util.Scanner;
 

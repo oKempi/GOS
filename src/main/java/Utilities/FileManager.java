@@ -1,4 +1,8 @@
 package Utilities;
 
-public class JsonManager {
+import java.io.File;
+import java.io.IOException;
+
+public class FileManager {
+
 }
