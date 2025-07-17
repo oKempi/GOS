@@ -12,6 +12,7 @@ public class WeatherSystem {
         Random rand = new Random();
         if(World.getDay() == 1 && World.getMonth() == 4){
             World.setWeather("Rain");
+            SocialSystem.changeMood(-5);
         }
         else if (World.getSeason().equals("Spring")) {
             World.setWeather(Spring[rand.nextInt(Spring.length)]);

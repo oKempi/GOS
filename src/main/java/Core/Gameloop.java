@@ -32,9 +32,10 @@ public class Gameloop {
 
     //first loop
     public static void main(String[] args) {
-        for (int i = 0; i < 5; i++){
+        for (int i = 0; i < 5; i++){ //first 5 turns just show you what is happening, only after those you can interact
             advance();
-            processChoice();
+            processChoice(); //only to continue when player is ready
+            CLI.print();
         }
         //forever loop
         while(true) {

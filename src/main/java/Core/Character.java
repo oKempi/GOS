@@ -10,7 +10,8 @@ public class Character {
     private String birthDate;
 
     //for game mechanics (technically mood should be here as well :D)
-    private int money = 0;
+    private int money = 0; //aka coins
+    private
 
 
     public Character(String name, String birthDate) {
