@@ -3,6 +3,7 @@ package UI;
 import Core.Gameloop;
 import Core.World;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class CLI {
@@ -11,9 +12,11 @@ public class CLI {
     private static Boolean yearChanged = false;
     private static final Scanner scanner = new Scanner(System.in);
 
+    private static String[] situations = null; //will be something after file are loaded
+
     public static void print(){
         //Day/Date <= 1st line
-        if(World.getMonth() == 0){
+        if(World.getMonth() == 0 && World.getYear() == 0){
             System.out.println("Day " + World.getDay());
         }
         if(monthChanged)
@@ -34,6 +37,7 @@ public class CLI {
         System.out.println("Your next action is in " + Gameloop.nextTurn);
 
         //Little overview of what has happened
+        System.out.println(situations[new Random().nextInt(situations.length)]);
         resetBooleans();
     }
 
